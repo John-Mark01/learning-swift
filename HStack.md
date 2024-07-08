@@ -8,9 +8,11 @@ An HStack places all objects on the **horizontal axis**.
 
 When initializing an HStack you can specify<sup>or it will be nil, and be at default state</sup> theese parameters:
 
-- alignment: (VerticalAlignment -> 
+- ***alignment:*** _VerticalAlignment_ -> 
 
 ![image](https://github.com/John-Mark01/learning-swift/assets/147177515/3cd07919-eebc-4373-8e4e-34b0b2b6b15d)
 
-- spacing: **CGFloat** that describes how much spacing should elements and subviews have between each other.
+- ***spacing:*** **CGFloat** that describes how much spacing should elements and subviews have between each other.
+
+- ***content:*** this is what will be within the VStack
 
