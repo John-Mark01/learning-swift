@@ -8,13 +8,14 @@ a VStack confronts and is of type View. Which means, that if you try and put two
 ![image](https://github.com/John-Mark01/learning-swift/assets/147177515/745bc447-0c91-48bd-8e83-ad302d59a22e)
 
 ### VStacks can be initialized with a couple of specified parameters
-- alignment: -HorisontalAlignment- ->
+- ***alignment:*** _HorisontalAlignment_ ->
+
   ![image](https://github.com/John-Mark01/learning-swift/assets/147177515/1b588043-db82-4d1b-8257-0bb57f51fd01)
 
   
-- spacing: a CGFloat that specifies how much space all elements and subviews have between each other
+- ***spacing:*** a CGFloat that specifies how much space all elements and subviews have between each other
            if "nil", the sapacing will be set to default
 
-- content: this is what will be within the VStack
+- ***content:*** this is what will be within the VStack
   
 
