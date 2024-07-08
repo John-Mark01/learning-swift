@@ -4,6 +4,6 @@
 
 [#HStack](https://github.com/John-Mark01/learning-swift/blob/2c91ba2424f595dc5237528c9e7fbd3af288ecad/HStack.md)
 
-[#VStack]()
+[#ZStack]()
 
 [#LazyStack]()
