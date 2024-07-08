@@ -5,16 +5,9 @@
 - a VStack also renders all views within it (Text, Spacer(), Image, etc.) at once> Regardless of whether they are on, or offscreen.
 - a regular VStack is best used when you have a small number of subviews... or, don't want the deleyed rendering behaviour of the "lazy" stack.
 
- var body: some View {
-    VStack(
-        alignment: .leading,
-        spacing: 10
-    ) {
-        ForEach(
-            1...10,
-            id: \.self
-        ) {
-            Text("Item \($0)")
-        }
-    }
-}
+![image](https://github.com/John-Mark01/learning-swift/assets/147177515/99263ae7-ae55-4da0-a0b5-a5fbb6af1186)
+![image](https://github.com/John-Mark01/learning-swift/assets/147177515/745bc447-0c91-48bd-8e83-ad302d59a22e)
+
+* VStacks can be initialized with a couple of specified parameters
+* 
+
