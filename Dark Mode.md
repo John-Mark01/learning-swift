@@ -13,6 +13,8 @@
 
 ## How to enable dark mode?
 
+### With _@Environment_ modifier
+
 1. Modify all of the views and subviews(Text, VStack, ZStack etc.) that use colors, to the custom colors that you have created.
   - Color("customNameForColor")
 2. Add a global variable for your View
@@ -23,3 +25,4 @@
       - Light
 3. Now everytime a user changes his device colorScheme, your view will change automatically.
 
+### With _@AppStorage()_ modifier
