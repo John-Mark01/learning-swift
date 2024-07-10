@@ -34,7 +34,8 @@
 
 - in your button's action set your _@State variable_ to true. ————————————————————————————> ![image](https://github.com/John-Mark01/learning-swift/assets/147177515/c75e3a1e-0074-4564-82e7-0d78e3e8e66e)
 
-- create a **.onChange** modifier on that _@State variable_, that sets _UserDefaults.standard.bool(forKey: "isDarkMode")_ ***(this is the @AppStorage variable we created in the @main/AppDelegate)***
+- create a **.onChange** listner on you _@State variable_, that will set _UserDefaults.standard.bool(forKey: "isDarkMode")_<sup>***(this is the @AppStorage variable we created in the @main/AppDelegate)***</sup> with a new value from _@State variable_ when the _@State variable_ updates. ![image](https://github.com/John-Mark01/learning-swift/assets/147177515/bafb51c5-15ac-486e-9d4c-91df5711d7ac)
+
 - create a **.onAppear** modifier that sets the _@State variable to be equal to _UserDefaults.standard.bool(forKey: "isDarkMode") ————> ![image](https://github.com/John-Mark01/learning-swift/assets/147177515/71b67d36-8406-425d-91a6-0459b1cae2ad)
                                         
 
