@@ -25,4 +25,5 @@
       - Light
 3. Now everytime a user changes his device colorScheme, your view will change automatically.
 
-### With _@AppStorage()_ modifier
+### With _[@AppStorage()]()_ modifier
+
