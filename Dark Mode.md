@@ -37,5 +37,10 @@
 - create a **.onChange** listner on you _@State variable_, that will set _UserDefaults.standard.bool(forKey: "isDarkMode")_<sup>***(this is the @AppStorage variable we created in the @main/AppDelegate)***</sup> with a new value from _@State variable_ when the _@State variable_ updates. ![image](https://github.com/John-Mark01/learning-swift/assets/147177515/bafb51c5-15ac-486e-9d4c-91df5711d7ac)
 
 - create a **.onAppear** modifier that sets the _@State variable to be equal to _UserDefaults.standard.bool(forKey: "isDarkMode") ————> ![image](https://github.com/John-Mark01/learning-swift/assets/147177515/71b67d36-8406-425d-91a6-0459b1cae2ad)
+
+
+Resources: 
+- https://youtu.be/cbJuWtGOjs4?si=awMLWctKyKZjCtyl
+- https://youtu.be/Su3kDlCT3sM?si=P9y5slHbuIvT94vR
                                         
 
