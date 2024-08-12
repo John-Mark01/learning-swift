@@ -39,9 +39,23 @@
 ### Customise TabView
 
 - You can always customise your TabView to your liking.
-- One of the main things you can do is a _.accentColor()_ modifier, that takes a Color, and changes the whole TabView's color:
+1. One of the main things you can do is a _.accentColor()_ modifier, that takes a Color, and changes the whole TabView's color:
 
 ![image](https://github.com/user-attachments/assets/8debb4d1-aed2-45f1-b87c-f13a79267de9) ![image](https://github.com/user-attachments/assets/391d6664-fead-4dce-ad92-9cbea9663b37)
+
+2. You can add a _.badge()_ modifier to your views and give them
+   - a String
+   - or an Int
+        - theese can be placed as _@State_ variables and be updated dynamicly, based on that variable
+          
+ ![image](https://github.com/user-attachments/assets/31636d07-4df9-4058-8de9-6be329f3d0c2) ![image](https://github.com/user-attachments/assets/9a758d27-e27e-43a0-b433-6f8d38116db0)
+
+ ![image](https://github.com/user-attachments/assets/83b52448-e3af-4da9-b028-cfbf21abf859)  ![image](https://github.com/user-attachments/assets/bd18c231-1dac-4349-9feb-975177748ee8)
+
+
+
+
+
 
 
 
