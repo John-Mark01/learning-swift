@@ -29,7 +29,8 @@
 - Congratulations !
 
  ### Resources:
-- Apple Documentation
+- [Apple Documentation](https://developer.apple.com/documentation/swiftui/tabview)
+- [YouTube - Sean Allen](https://www.youtube.com/watch?v=tnNFoZ7CkP8)
   
 
 
