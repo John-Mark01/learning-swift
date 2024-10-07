@@ -34,4 +34,4 @@
 - So every time we set a new value to age, (in our example) we set the age in UserDefaults.
 
 
-There is an even more sophisticated way to write code and that is with [Observed Properties]()
+There is an even more sophisticated way to write code and that is with [Observed Properties](https://github.com/John-Mark01/learning-swift/blob/main/Observed%20Properties.md)
