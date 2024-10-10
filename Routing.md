@@ -29,7 +29,7 @@ struct RouterView<Content: View>: View {
     var body: some View {
         NavigationStack(path: $router.path) {
             content
-                .navigationDestination(for: YOURENUM.ETView.self) { route in
+                .navigationDestination(for: Router.YOURENUM.self) { route in
                     router.view(for: route)
                 }
         }
