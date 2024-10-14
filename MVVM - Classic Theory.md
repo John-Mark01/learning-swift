@@ -1,5 +1,7 @@
 # MVVM Pattern - The Theory
 
+## Theory
+
 **M** - Model:
 
 * The **Model** is the file containing ALL of an object's _Business Logic_. 
@@ -22,3 +24,11 @@
 **VM** - ViewModel
 * The **ViewModel's* job is to get the data from the __Model__ and deliver it to the __View__.
 * It's basic function is a *Provider*. It gets a piece of data and gives it to the UI.
+
+ ## Implementation
+
+ 1. For every View you have in your application, you designate its own ViewModel file.
+
+<img width="1552" alt="image" src="https://github.com/user-attachments/assets/bb1445a9-c004-4dbc-89d2-5b4b7cf0b10c">
+
+
