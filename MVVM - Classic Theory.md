@@ -25,7 +25,12 @@
 * The **ViewModel's* job is to get the data from the __Model__ and deliver it to the __View__.
 * It's basic function is a *Provider*. It gets a piece of data and gives it to the UI.
 
- ## Implementation
+## Implementation
+
+1. In our View we create a *let* constant called _YourView_**ViewModel** after that we make an _init_ where we initialize our view with the **ViewModel**
+2. In our Root, @main, or navigation Ruter(Main Window Group) we fill the parameter for our **ViewModel** and initialize it there.
+
+## Example
 
  1. For every View you have in your application, you designate its own ViewModel file.
 
