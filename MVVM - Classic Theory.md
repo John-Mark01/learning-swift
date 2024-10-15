@@ -25,6 +25,11 @@
 * The **ViewModel's* job is to get the data from the __Model__ and deliver it to the __View__.
 * It's basic function is a *Provider*. It gets a piece of data and gives it to the UI.
 
+<img width="846" alt="image" src="https://github.com/user-attachments/assets/74c08e21-78af-4cbb-8632-8d1e164f966d">
+
+<img width="1026" alt="image" src="https://github.com/user-attachments/assets/47f03e07-884c-4979-b82c-2488df9d0eda">
+
+
 ## Implementation
 
 1. In our View we create a *let* constant called _YourView_**ViewModel** after that we make an _init_ where we initialize our view with the **ViewModel**
