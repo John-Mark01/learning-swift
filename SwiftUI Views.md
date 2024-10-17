@@ -34,3 +34,6 @@
 2. SwiftUI's views are their own ViewModels, so they can store methods, computed properties, and add property wrappers like @State, @Binding, etc...
 3. SwiftUI views do NOT necessarily render the pixels on the screen. Most of the time they are just a declaration of a View.
    - SwiftUI views are always of value type for that reason.
+  
+## 3. How SwiftUI Views work 
+[Great Article](https://www.malcolmhall.com/2023/03/23/learn-swiftuis-view-struct-value-semantics-diffing-and-dependency-tracking/)
