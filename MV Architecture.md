@@ -32,15 +32,7 @@
 
 <img width="1799" alt="image" src="https://github.com/user-attachments/assets/1ec04b06-380b-4f77-881f-e33eb51847a0">
 
-    ex: we might have a CoffeOrderView. This view will use @Enviroment(CoffeeStore()). This way it can
-
-
-
-
-
-
-
-
-
 
 #### V - View:
+
+##### [Understand SwiftUI Views](https://github.com/John-Mark01/learning-swift/blob/main/SwiftUI%20Views.md)
