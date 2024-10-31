@@ -5,6 +5,11 @@
 ### 1. Private
   - When created a property/method with a private modifier, this property/method is limited to be accessed only inside the __SCOPE__ of which they are created at. 
   - private properties/methods are the most limited of all Access Modifiers
+
+**Advantages:**
+-  when you are in private, this means that you CAN'T accidentally modify this property/method
+- it can only be modified by the class that needs to.
+    
 ### 2. FilePrivate
   - Property/Method is only accessable within the __FILE__ that is created.
   - you can't access this property/method from another file. It is only global for the file that is in.
@@ -23,5 +28,8 @@
   - it means that it can be accesed through other modules, but also means that all of your classes can be Sub-classed and overriten.
 
 
+## Best Practices
 
+1. Whenever you create a property/method, always describe it as __private_.
+   * if in time you need to level-up, then do so, but first start with private, and then level-up to filePrivate, internal.
   
