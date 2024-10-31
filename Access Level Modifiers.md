@@ -28,6 +28,9 @@
   - it means that it can be accesed through other modules, but also means that all of your classes can be Sub-classed and overriten.
 
 
+<img width="736" alt="image" src="https://github.com/user-attachments/assets/962cd637-861e-4100-9833-a6e43d1d02e3">
+
+
 ## Best Practices
 
 1. Whenever you create a property/method, always describe it as __private_.
