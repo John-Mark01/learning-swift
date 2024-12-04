@@ -4,5 +4,7 @@
 
 ## 2. @Eniviroment / EnviromentObject  [go](https://github.com/John-Mark01/learning-swift/blob/main/SwiftUI%20Sugar%20/Environment%20%26%20EnironmentObject.md)
 
-## 3. Dark Mode  [go](https://github.com/John-Mark01/learning-swift/blob/main/SwiftUI%20Sugar%20/Dark%20Mode.md)
+## 3. @Eniviroment Values [go](https://github.com/John-Mark01/learning-swift/blob/main/SwiftUI%20Sugar%20/%40Environment%20Values.md)
+
+## 4. Dark Mode  [go](https://github.com/John-Mark01/learning-swift/blob/main/SwiftUI%20Sugar%20/Dark%20Mode.md)
 
