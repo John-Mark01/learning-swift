@@ -1,5 +1,12 @@
 # Tips
 
+## Dedug changes in a SwiftUI View
+- will print every change that gets RERENDERED
+```
+let _ = Self._printChanges()
+```
+
+
 ## Scroll / Scrolling 
 
 <img width="1101" alt="image" src="https://github.com/user-attachments/assets/5c12a958-45a2-464c-94e5-dff30ae44034">
