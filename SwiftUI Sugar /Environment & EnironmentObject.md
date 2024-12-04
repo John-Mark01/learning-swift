@@ -58,4 +58,4 @@ Example:
 - Even if you inject an Environment object in a view, and then access it in your view ```@Environment(Store.self) var Store```, and NOT use the object/value in the view, the View itself will NOT be rerendered/recomputed/reevaluated/diffed etc. Or in other words, only the views that are dependent on the Environment object, or value, only then will the View get recomputed.
 
 ## Articles
-- Azam Sharp - Deep Dive into Environment in SwiftUI [go](https://azamsharp.com/2024/11/18/deep-dive-into-environment-in-swiftui.html)
+- Azam Sharp - Deep Dive into Environment in SwiftUI   [go](https://azamsharp.com/2024/11/18/deep-dive-into-environment-in-swiftui.html)
