@@ -2,3 +2,5 @@
 
 **1. @AppStorage** [click to go](https://github.com/John-Mark01/learning-swift/blob/main/%40AppStorage.md)
 **2. @Eniviroment / EnviromentObject**  [click to go]()
+**3. Dark Mode**  [click to go](https://github.com/John-Mark01/learning-swift/blob/main/SwiftUI%20Sugar%20/Dark%20Mode.md)
+
