@@ -48,4 +48,56 @@ If the value changes, SwiftUI updates any parts of the view THAT DEPEND on the v
 
 ## How to define Custom Environment Values?
 
+#### Easy - 3-ish Steps (Create a variable for your app's main color)
+  1. Create a file - name the file after the keyPath you want to pass in the Environment
+     * import SwiftUI
+     * create a structure with the same name as the keyPath
+       * the struct needs to conform to ``` EnvironmentKey ``` protocol
+       * add a default value - ``` static variable defaultValue: Color = Color.red ```
+
+      ```
+      import SwiftUI
+      
+      struct AppColorKey: EnvironmentKey {
+        static var defaultValue: Color = . red
+      }
+      
+     ```
+2. Next we add an extenstion to the EnvironmentValues structure.
+   * ``` extension EnvironmentValues  ```
+   * inside you add a computed propery named EXACTLY as your EnvironmentKey struct
+     This property will have a getter and a setter
+   ```
+   extension EnvironmentValues {
+      var appColor: Color {
+          get {
+            self[AppColorKey.self]
+          }
+          set
+          {
+            self[AppColorKey.self] = newValue
+          }
+      }
+   }
+    ```
+3. (OPTIONAL STEP) Extend View and add a function to use directly in any View
+   * create an extension of View -  ``` extension View  ```
+   * create a func named the same as the Environment value, that accepts a Color, and returns ``` some View ```
+   * inside the fuction add ``` environment(\.appColor, color) ```
+     ```
+     extension View {
+      func appColor (_ color: Color) ->  some View {
+        environment(\.appColor, color)
+      }
+      ```
+   * now you can change the app's view in ANY VIEW, and pass in another appColor (setter)
+     ```
+        FirstView()
+          .appColor(.green)
+     ```
+   * also you can use the value to change a View's tint for example (getter)
+
+## Articles 
+
+- [Every SwiftUI Environment Value explained](https://www.fivestars.blog/articles/swiftui-environment-values/)
 
