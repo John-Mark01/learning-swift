@@ -1,6 +1,6 @@
 # @Environment values in SwiftUI
 
-## What is an EnvironmentValue, or variable
+## What is an EnvironmentValue, or variable?
 - It is value that is being set in a collection of other values to our SwiftUI app's views in a structure.
   
    * This value can be of any Basic type for values - like String, Bool, Int, Double, Float, Array, Set, Dictionarty, etc.
@@ -19,7 +19,7 @@
   ```
 If the value changes, SwiftUI updates any parts of the view THAT DEPEND on the value. For example, that might happen in the above exaple when the user changes the Appearance settings.
 
-## Important Facts
+## Important Facts!
 
 - You can use this property wrapper to red, **BUT NOT SET** an environment value. SwiftUI updates some environment values automatically based on system settings and provides reasonable defaults values for others.
 - You can override some of the included, as well as set custom environment values that you define, using the Environment View Modifier.
@@ -28,9 +28,8 @@ If the value changes, SwiftUI updates any parts of the view THAT DEPEND on the v
       * Some examples: ``` .background(some View) ``` ``` .lineLimit(Int) ``` ``` .preferredColorScheme(ColorScheme?) ```
 
     - The value that you set affects the environment for the view that you modify, including it's child descendences, ONLY UP TO A POINT where ANOTHER view modifier is applied.
-    - 
 
-## How to use Environment Values
+## How to use Environment Values?
 
 1. We add the property wrapper and use a [KeyPath]() for the value that we need.
    * it is a convention that we name the variable the same as the [KeyPath]()
@@ -42,6 +41,11 @@ If the value changes, SwiftUI updates any parts of the view THAT DEPEND on the v
       }
     }
    ```
-   
+2. We use the value.
+   * some values are only getters, some can be modified
+  
+3. If we use a custom object, or value, we need to inject it the view, that will be dependent of that Environment
 
-## How to define Custom Environment Values
+## How to define Custom Environment Values?
+
+
