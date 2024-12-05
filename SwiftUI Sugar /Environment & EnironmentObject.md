@@ -1,6 +1,12 @@
 # Environment & EnironmentObject
 
 ## What is Environment & EnironmentObject?
+  - First - **Environment** is a property wrapper to read a value stored in a view's environment. 
+    * You can eighter read it with a keypath ``` @Environment(\.locale) ``` this mostly used for values, like __locale, colorScheme, dismiss, etc.__ - more info on the [Environment Values](https://github.com/John-Mark01/learning-swift/blob/main/SwiftUI%20Sugar%20/@Environment%20Values.md)
+    * Or you can read an object from the environment ``` @Environment(Store.self) var store ```
+   
+  #### Note: This article will be focused on using objects in the Environment. Will be reffered as Stores, or Store()
+  
   - @EnvironmentObject was used up until iOS 17, after that with the addition of @Observable macro and the Observation protocol, it has been changed to @Environment
     #### So what is @Environment?
     - @Environment is a way to create, use and maintain global state in a SwiftUI Application. An @Environment is an object (not EnvironmentObject) that can be any @Observable class.
@@ -27,7 +33,7 @@
 ```
 3. After we inject our container we access the Environment within our Views
    objects: ``` @Environment(Store.self) var store ```
-   values: ``` @Environment(\.dismiss) var dismiss ```
+   values: ``` @Environment(\.dismiss) var dismiss ``` - more info on the [Environment Values](https://github.com/John-Mark01/learning-swift/blob/main/SwiftUI%20Sugar%20/@Environment%20Values.md)
    
 #### NOTE: 
 We can create multiple Environment containers (@Observable classes) and inject them in multiple places in our project. Basically an Environment can be injected into any View in SwiftUI. So we can have multiple containers, that are injected in multiple places throghout our app. 
