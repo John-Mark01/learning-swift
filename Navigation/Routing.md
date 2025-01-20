@@ -39,4 +39,62 @@ struct RouterView<Content: View>: View {
 ```
 
 This view will be paced in the main Window Group in YouAppApp file.
-   
+
+## Methods for your Router. 
+- you will need a couple methods:
+  1. navigate(to: View) -> Navigate to a new view
+  2. navigateBack() -> Remove the last view from the stack and go back
+  3. navigateBack(count: Int) -> Remove the last INT view from the stack
+  4. navigateAndClearBackStack(_ : View) -> Navigate to a new view & remove all previous views
+  5. navigateToRoot() -> Removes all of the views and goes back to the root
+ 
+### navigate(to view: View)
+```
+func navigate(to: View) {
+   Router.stack.append(view)
+   path.append(view)
+}
+```
+ 
+### navigateBack() aka popBackStack()
+```
+func navigateBack() {
+   guard Router.stack.isEmpty == false else { return }
+   Router.stack.removeLast()
+   path.removeLast()
+}
+```
+### navigateBack() aka popBackStack()
+```
+func navigateBack() {
+   guard Router.stack.isEmpty == false else { return }
+   Router.stack.removeLast()
+   path.removeLast()
+}
+```
+ 
+### navigateAndClearBackStack(_ : View)
+```
+func navigateAndClearBackStack(_ view: View) {
+
+   if let index = Router.stack.lastIndex(of: view) {
+
+      let removeCount = Router.stack.count - index - 1
+      for _ in 0..<removeCount {
+         path.removeLast()
+      }
+      Router.stack = Array(Router.stack.prefix(index + 1))
+   } else {
+      Router.stack.append(view)
+      path.append(view)
+   }
+}
+```
+
+### navigateToRoot() aka popToRoot()
+```
+func navigateToRoot() {
+   path.removeAll()
+   path.removeLast(path.count)
+}
+```
