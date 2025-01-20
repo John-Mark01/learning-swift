@@ -64,12 +64,14 @@ func navigateBack() {
    path.removeLast()
 }
 ```
-### navigateBack() aka popBackStack()
+### navigateBackTimes(_ count: Int) aka popBackStack()
 ```
-func navigateBack() {
+func navigateBackTimes(_ count: Int)) {
    guard Router.stack.isEmpty == false else { return }
-   Router.stack.removeLast()
-   path.removeLast()
+   for _ in 0..<min(count, path.count) {
+      Router.stack.removeLast()
+      path.removeLast()
+   }
 }
 ```
  
