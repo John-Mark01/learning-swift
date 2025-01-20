@@ -35,4 +35,4 @@
 
 #### V - View:
 
-### [Understand SwiftUI Views](https://github.com/John-Mark01/learning-swift/blob/main/SwiftUI%20Views.md)
+### [Understand SwiftUI Views](https://github.com/John-Mark01/learning-swift/blob/70291ce30142dad36780e4183f6ea49a9ef5dca8/SwiftUI%20Native/SwiftUI%20Views.md#L4)
