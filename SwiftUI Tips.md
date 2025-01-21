@@ -6,6 +6,12 @@
 let _ = Self._printChanges()
 ```
 
+## ```Ignore Keyboard on view```
+  ```.ignoreSafeArea(.keyboard)```
+
+[article](https://www.fivestars.blog/articles/swiftui-keyboard/)
+
+
 
 ## Scroll / Scrolling 
 
