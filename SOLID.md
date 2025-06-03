@@ -55,10 +55,40 @@ This function is supposed to do 1 thing (Single Responsability), but currently d
 
 
 ### L - Liskov Substitution Principle (LSP)
-#### “Subtypes must be substitutable for their base types.”
+**“Subtypes must be substitutable for their base types.”**
+
 - Any derived class should be able to perform everything that the base class can do, and clients (views) using the base class should not need to know whether they’re working with a base class or a subclass.
+- Subclasses should not impose restrictions that break the assumptions of the base class.
+  
 - So this means that if I create a class/struct: ```Vehicle```, and then a Subclass: ```Car```, ```Car``` should be able to use all the properties that ```Vehicle``` has, and the client(the Views/ViewModels/Protocols) should work with both ```Vehicle``` and ```Car``` without breaking.
-- 
+
+**To prevent violations of LSP, it’s important to:**
+- Ensure that subclasses or conforming types do not override methods in ways that contradict the base behavior.
+- Use composition or delegation where appropriate, instead of forcing inheritance or protocol conformance that doesn’t fully align with the expected behavior.
+- Validate conditions or constraints outside of the core class logic to maintain consistency across types.
+
+
+### I - Interface Segregation Principle (ISP)
+**clients should not be forced to depend on interfaces they do not use.**
+- this means that every client(Model, Protocol, UseCase/Service) has to use what is necessary for itself, and not conform or adhire to that is close, but not EXACTLY what this client needs.
+To achive ISP, we could always:
+    1. Favor abstraction - protocols/interfaces (composition), over Inheritance
+    2. Make protocols smaller, and specific, not bloated to conform to many clients
+ 
+
+### D - Dependency Inversion Principle (DIP)
+**high-level modules should not depend on low-level modules; both should depend on abstractions.**
+**abstractions should not depend on details, but details should depend on abstractions.**
+
+* a high-level module is SwiftUI View, and @Observable ViewModel.
+* a low-level module is UseCase/Service
+
+- so what this means is, that my  ```UserViewModel``` that is responsible for ```UserView```, should not depend on RealmDatabase to get a user, but instead on a abstraction (Protocol), that is used on a UseCase/Service called UserManager ```class UserManager: UserNetworking```, and inside the viewModel, we create a dependency on the ```UserManager```, not on RealmDatabase.
+That way when I decide to use SwiftData, instead of RealmDatabase, I should not change ```UserViewModel```, but instead the implementation in ```UserManager``` based on that ```UserNetworking``` protocol (abstraction).
+
+- High-level module -  ```UserViewModel``` doesn't depend on Low-Level module  ```RealmDatabase```
+- Now Low-Level modules - ```UserManager: UserNetworking``` work with implementation details, while ```UserView``` and ```UserViewModel``` does not care if anything has changed.
+
 
 
 
