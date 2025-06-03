@@ -2,7 +2,7 @@
 ## Implementation in iOS Dev (Swift & SwiftUI)
 
 
-### S - Single Responsablity (SRP) 
+### S - Single Responsablity Principle (SRP) 
 **class or module should have only one reason to change. In other words, a class should have only one responsibility or one job.**
 - a reason for change is any reason - now, or in the future. 
 - so the only way you can predict what is going to happen, or what is going to change is through ```abstraction``` — [OOP Principles]().
@@ -50,7 +50,8 @@ This function is supposed to do 1 thing (Single Responsability), but currently d
 
 
 
-
+### O - Open-Closed Principle (OCP)
+- By violating OCP, you’re essentially locking yourself into a cycle of repetitive modifications that increase the likelihood of bugs, slow down development, and hurt scalability.
 
 
 
