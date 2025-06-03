@@ -54,6 +54,12 @@ This function is supposed to do 1 thing (Single Responsability), but currently d
 - By violating OCP, you’re essentially locking yourself into a cycle of repetitive modifications that increase the likelihood of bugs, slow down development, and hurt scalability.
 
 
+### L - Liskov Substitution Principle (LSP)
+#### “Subtypes must be substitutable for their base types.”
+- Any derived class should be able to perform everything that the base class can do, and clients (views) using the base class should not need to know whether they’re working with a base class or a subclass.
+- So this means that if I create a class/struct: ```Vehicle```, and then a Subclass: ```Car```, ```Car``` should be able to use all the properties that ```Vehicle``` has, and the client(the Views/ViewModels/Protocols) should work with both ```Vehicle``` and ```Car``` without breaking.
+- 
+
 
 
 ### Articles for the topic
