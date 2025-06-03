@@ -41,6 +41,7 @@ This function is supposed to do 1 thing (Single Responsability), but currently d
 
 <img width="650" alt="Screenshot 2025-06-03 at 9 07 08" src="https://github.com/user-attachments/assets/6c4109ce-3895-41de-9e75-38e97de4e947" />
 
+
 - now every part of the previous function is seperated (Separation of concerns), (Decoupling), and lives in it's own class that has only one reason for change, and each class's implementation is abstract because of the protocols. 
 
 #### Final tips: 
