@@ -51,8 +51,12 @@ This function is supposed to do 1 thing (Single Responsability), but currently d
 
 
 ### O - Open-Closed Principle (OCP)
+**software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.**
 - By violating OCP, you’re essentially locking yourself into a cycle of repetitive modifications that increase the likelihood of bugs, slow down development, and hurt scalability.
 
+There is no real way to know when will you change a ceratin part of an entity because you still develop it!, but there are some techniques that can limit the chances of your app breaking because of a change.
+
+## TODO: //Reflect on OCP More 
 
 ### L - Liskov Substitution Principle (LSP)
 **“Subtypes must be substitutable for their base types.”**
