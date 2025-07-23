@@ -40,8 +40,8 @@ struct ContainerView<Content: View>: View {
 
 ```
 struct ContainerView<Content: View>: View {
-    @ViewBuilder let content: () -> Content
     var cornerRadius: CGFloat = 8
+    @ViewBuilder let content: () -> Content
     
     var body: some View {
         VStack {
@@ -52,8 +52,13 @@ struct ContainerView<Content: View>: View {
 }
 
 ```
+The initializer would look something like this:
 ```
+ContainerView(cornerRadius: CGFloat, content: Content)
 
+ContainerView(cornerRadius: 16) {
+    code
+}
 ```
 
   
@@ -65,10 +70,46 @@ struct ContainerView<Content: View>: View {
 so: 
 
 ```
-
-
+struct SurfaceStack<Content: View>: View {
+    // Can be used like a VStack or HStack, but automatically added inside paddings, background, cornerRadius
+    let content: () -> Content
+    var edgeInsets: EdgeInsets = EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
+    var cornerRadius: CGFloat = 14
+    var backgroundColor: Color = Color.gray
+    
+    public var body: some View {
+     VStack {
+        content()
+    }
+    .padding(edgeInsets)
+    .background(backgroundColor)
+    .cornerRadius(cornerRadius)
+  }
+}
 
 ```
+
+```
+SurfaceStack {
+        Image(systemName: "pencil")
+            .font(.system(size: 32))
+        Text("Hello, world!")
+}
+```
+
+Now, every single View that is added in the SurfaceStack's scope, will be in a vstack, will have exactly the paddings in between object as i have specified them to be, and this it will be rounded to the corner radius as well.
+
+Now just imagine how many things you can add:
+- @Environment
+- @State
+- Text
+- Images
+- OtherViews
+- Animations
+So much more...
+
+
+
 
 
 
